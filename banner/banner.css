@@ -1,0 +1,102 @@
+/*
+* @Author: luo
+* @Date:   2019-08-12 16:05:35
+* @Last Modified by:   luo
+* @Last Modified time: 2019-08-12 16:07:15
+*/
+	
+ 	body{
+ 		margin: 0;
+ 		padding: 0;
+ 	}
+ 	h1{
+ 		margin-top: 50px;
+ 		text-align: center;
+ 		line-height: 30px;
+ 		color: blue;
+ 	}
+    .left{
+    	float: left;
+    }
+ 	.banner {
+ 		width: 2000px;
+ 		height: 300px;
+        position: relative;
+        top: 50px;
+        left: 35%;
+ 	}
+ 	.banner .ban_one{
+ 	   
+ 	    width: 400px;
+ 	    height: 300px;
+        outline: 10px solid;
+        display: flex;
+        overflow: hidden;
+ 	}
+ 	.banner .ban_one .ban img{
+ 		     
+         width: 400px;
+         height: 300px;
+        
+ 	}
+ 	.ban_cire{
+ 		width: 200px;
+ 		height: 50px;
+ 		position: relative;
+ 		top: -40px;
+ 		left: 130px;		
+ 		margin-top: -50px;
+ 	}
+ 	
+  .banner .ban_cire a {
+    text-decoration: none;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+     margin:0 35px 40px 0;
+}
+  .banner .ban_cire a:hover{
+      cursor: pointer;
+      background: #dcdcdc;
+      opacity: 1;
+ }
+ .banner .ban_cire a.san{
+      
+      background-color: red;
+ }
+  .banner .prev,.next{
+
+  	  position: absolute;
+      cursor: pointer;
+      color: blue;
+  }
+.banner .prev{
+	display: none;
+	width: 0px;
+	height: 0px;
+	top: 150px;
+	left: 0 ;
+	border: 15px solid green ;
+    border-left: 0 ;
+    border-right-color: blue;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+	opacity: 0.5;
+	
+}
+.banner .next{
+    
+     top: 150px;
+	 left: 19.2%;
+     display: none;
+	 width: 0px;
+	 height: 0px;	
+	 border: 15px solid green ;
+     border-left-color: blue ;
+     border-right: 0;
+     border-top-color: transparent;
+     border-bottom-color: transparent;
+     opacity: 0.5;
+}
