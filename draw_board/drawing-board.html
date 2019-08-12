@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>drawing board</title>
+</head>
+<style>
+
+	/* .canvas{
+		border: 1px solid red;
+	} */
+</style>
+<link rel="stylesheet" href="drawing.css">
+<body>
+     <h2>画板</h2>
+     <div class="wrapper">
+     	<canvas class="cavs" width="1000" height="500"></canvas>
+     		<ul class="btn-list">
+     			<li><input type="color" id="colorBoard" value="colorBoard"></li>
+     			<li><input type="button" id="cleanBoard"  value="清屏"></li>
+     			<li><input type="button" id="eraer" value="橡皮"></li>
+     			<li><input type="button" id="rescind" value="撤销"></li>
+     			<li><input class="range" id="lineRuler" type="range" value="线条" min="1" max="30"></li>
+     		</ul>
+     	
+     </div>
+     <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="drawing.js"></script>
+    
+	 <!-- <canvas class="canvas" width="500" height="500"></canvas> -->
+	 <!-- <script type="text/javascript">
+	 	  
+	 	  var canvas = document.getElementsByClassName('canvas')[0];
+	 	  ctx = canvas.getContext("2d");
+          ctx.moveTo(100, 100);     //起始点坐标
+          ctx.lineTo(200, 100);     //从起始点绘制到x，y
+          ctx.lineTo(200, 200);
+
+          ctx.strokeStyle = '#ff0000';   //描边
+          ctx.lineWidth = 20;            //画笔宽度
+          ctx.closePath();          
+          ctx.fill();                    //填充
+          ctx.fillStyle = '#444444';
+          ctx.stroke();
+
+          //第二个图形
+          ctx.beginPath();           //一定要重新开始新的路径
+
+          ctx.moveTo(300, 100);     //起始点坐标
+          ctx.lineTo(400, 100);     //移动坐标
+          ctx.lineTo(400, 200);
+          ctx.strokeStyle = '#ccc';   //描边
+          ctx.lineWidth = 20;            //画笔宽度
+          ctx.closePath();          
+          ctx.fill();                    //填充
+          ctx.fillStyle = '#ccc';
+          ctx.stroke();
+          
+          var imge = ctx.getImageData(70,70,160,160);
+
+           ctx.putImageData(imge, 300,300);
+           ctx.clearRect(0, 0, 500, 500);
+	 </script> -->
+</body>
+</html>
